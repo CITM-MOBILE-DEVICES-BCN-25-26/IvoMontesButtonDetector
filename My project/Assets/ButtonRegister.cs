@@ -8,7 +8,7 @@ public class ButtonRegister : MonoBehaviour, IPointerDownHandler, IPointerUpHand
 {
 	private CancellationTokenSource tokenSource;
 	private int timeToDoubleClick = 250;
-	private float longClickTime = 2f;
+	private float longClickTime = 1.5f;
 	private bool isLongClick;
 	private bool isDoubleClick;
 	private float timeClicked;
@@ -31,7 +31,6 @@ public class ButtonRegister : MonoBehaviour, IPointerDownHandler, IPointerUpHand
         await Click(tokenSource.Token);
 		
 	}
-
 
 
 
